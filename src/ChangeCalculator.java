@@ -27,9 +27,9 @@ String quarters=JOptionPane.showInputDialog("How many quarters do you have?");
 int q=Integer.parseInt(quarters);
 		// Calculate how much money the user has and save it in a double variable 
 double money= 0.0;
-money=money+nickels*.05;
-money=money+dimes*.10;
-money=money+quarters*.25;
+money=money+n*.05;
+money=money+d*.10;
+money=money+q*.25;
 		// Tell the user how much money they have
 JOptionPane.showMessageDialog(null, "You have "+money);
 	}
