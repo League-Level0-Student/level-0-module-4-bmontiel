@@ -37,31 +37,31 @@ System.out.println(keyCode);
 			// 3. If they selected the right fruit, do steps 4 and 7
 	if	(keyCode==67) {
 				// 4. Call the correct() method
-			correct(keyCode);}
+			correct();
 				// 7. Use the nextQuestion() method to go to question2
-			
+			nextQuestion(question2);
+	}
 			
 			// 8. else (if they touched something else)
-			else if (keyCode==65) {
+	else {
 			
 				// 9. Call the incorrect() method
-		incorrect(keyCode);
+			incorrect();}}
 		}
-
-	}
 
 	private void correct() {
 		// 5. Find a sound for when they get a question right, and drag it into
-		// the default package. It must be a .wav file. 
+		// the default package. It must be a .wav file.
+	
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+playSound("correct.wav");
 
 	}
 
 	private void incorrect() {
 		// 10. Find a sound for wrong answers and put it in the default package. Use the playSound method to play it.
-
+playSound("wrong.wav");
 	}
 
 	private void nextQuestion(JLabel newQuestion) {
