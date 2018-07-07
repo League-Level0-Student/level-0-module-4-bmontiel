@@ -6,7 +6,7 @@ public class SimpleCalculator {
 	public static void main(String[] args) {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
-String integer=JOptionPane.showInputDialog("Give me integers");
+String integer=JOptionPane.showInputDialog("Give me an integer");
 String secondInteger= JOptionPane.showInputDialog("Give me another integer");
 int first=Integer.parseInt(integer);
 int second=Integer.parseInt(secondInteger);
@@ -24,7 +24,7 @@ if (operation==1);{
 	Subtract(first, second);
 }
 if (operation==2);{
-	Multipy(first, second);
+	Multiply(first, second);
 }
 if (operation==3);{
 	Divide(first, second);
@@ -45,13 +45,13 @@ if (operation==3);{
 
 	// 4. Create similar methods for subtraction, multiplication and division.
 	static void Subtract(int integer, int secondInteger) {
-		System.out.println(integer+secondInteger);
+		System.out.println(integer-secondInteger);
 	}
 	static void Multiply(int integer, int secondInteger) {
-		System.out.println(integer+secondInteger);
+		System.out.println(integer*secondInteger);
 	}
 	static void Divide(int integer, int secondInteger) {
-		System.out.println(integer+secondInteger);
+		System.out.println(integer/secondInteger);
 	}
 	}
 	
