@@ -2,14 +2,18 @@ import javax.swing.JOptionPane;
 
 public class Fibonacci {
 public static void main(String[] args) {
-		int current==1
-		int previous==0
-		int temp==1
-	
+		int first=1;
+		int second=1;
+		int third;
+	System.out.println(first);
+	System.out.println(second);
 	for (int i = 0; i < 13; i++) {
-		current+previous=temp
+	third=first+second;
+		System.out.println(third);
+		first=second;
+		second=third;
 		}
-1+1=2+1=3+2=5+3=8+5=13
+//1+1=2+1=3+2=5+3=8+5=13
 	}
 }
-}
+
